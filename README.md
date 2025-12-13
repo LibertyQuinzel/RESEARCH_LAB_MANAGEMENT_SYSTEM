@@ -1,13 +1,11 @@
-# DMSD_PROJECT (DMSD_V2)
-
-Lightweight device/member/project management CLI for local use.
-
+#RESEARCH LAB MANAGEMENT SYSTEM
 This repository provides a small Python-based management system with modules for equipment, members, projects and reporting. It exposes a simple interactive menu (`menu.py`) to perform operations.
 
 ## Requirements
 
 - Python 3.8+ (3.10+ recommended)
-- No external dependencies required by default (check `requirements.txt` if you add one)
+- No external dependencies required by default.
+- PostgreSQL 
 
 ## Quick start
 
@@ -37,15 +35,3 @@ The menu will guide you through creating and managing equipment, members, projec
   - `reporting.py` — report generation
 - `scripts/` — utility scripts
 
-## Notes
-
-- Add a `requirements.txt` if your project grows to include third-party packages.
-- Database files and sensitive items are excluded via `.gitignore`.
-
-## Contributing
-
-Open an issue or submit a pull request. Keep changes small and add tests where relevant.
-
-## License
-
-No license specified. Add a `LICENSE` file if you want to publish this project under an open-source license.
