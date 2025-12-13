@@ -25,8 +25,18 @@ class Database:
                     return cur.fetchall()
 
                 self.conn.commit()
+                return True
         except Exception as e:
+            # Rollback to clear connection error state, log and propagate the
+            # exception so callers (UI) can display accurate error messages and
+            # avoid continuing as if the operation succeeded.
+            try:
+                if self.conn:
+                    self.conn.rollback()
+            except Exception:
+                pass
             print("Query error:", e)
+            raise
 
     def close(self):
         if self.conn:

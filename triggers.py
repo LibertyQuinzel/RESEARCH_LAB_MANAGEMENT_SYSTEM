@@ -153,6 +153,16 @@ BEFORE INSERT OR UPDATE ON works
 FOR EACH ROW
 EXECUTE FUNCTION check_member_week_hours();
 
+-- ============================
+-- 5. CASCADE DELETES (implemented as AFTER DELETE triggers)
+--    These triggers remove dependent rows when a parent is deleted.
+--    Prefer database-level FK ON DELETE CASCADE where possible; these
+--    triggers provide equivalent behavior if FKs are not present.
+-- ============================
+-- NOTE: cascade deletes are handled by foreign keys with ON DELETE CASCADE
+-- in the schema (see create.py). To avoid duplicate or conflicting
+-- logic we do not create application-level cascade triggers here.
+
 """
 
 # Connect to the database and execute triggers
