@@ -1,4 +1,4 @@
-#RESEARCH LAB MANAGEMENT SYSTEM
+# RESEARCH LAB MANAGEMENT SYSTEM
 This repository provides a small Python-based management system with modules for equipment, members, projects and reporting. It exposes a simple interactive menu (`menu.py`) to perform operations.
 
 ## Requirements
