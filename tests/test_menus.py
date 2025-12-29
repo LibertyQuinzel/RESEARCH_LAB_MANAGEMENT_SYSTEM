@@ -72,6 +72,15 @@ class DummyEntry(DummyWidget):
         if 'state' in k:
             self._state = k['state']
 
+
+class DummyVar:
+    def __init__(self, value=False):
+        self._v = value
+    def get(self):
+        return self._v
+    def set(self, v):
+        self._v = v
+
 class DummyTreeview(DummyWidget):
     def __init__(self, *a, **k):
         super().__init__()
@@ -90,6 +99,8 @@ class DummyTreeview(DummyWidget):
         return { 'values': self._rows[child] }
     def delete(self, child):
         # accept anything
+        return None
+    def tag_configure(self, *a, **k):
         return None
     def configure(self, **k):
         return None
@@ -136,6 +147,18 @@ def patch_tkinter(monkeypatch):
     dummy_tk.Button = lambda *a, **k: DummyWidget()
     dummy_tk.Checkbutton = lambda *a, **k: DummyWidget()
     dummy_tk.LabelFrame = lambda *a, **k: DummyWidget()
+    # Common tkinter constants used by the code under test
+    dummy_tk.BOTH = 'both'
+    dummy_tk.Y = 'y'
+    dummy_tk.LEFT = 'left'
+    dummy_tk.RIGHT = 'right'
+    dummy_tk.TOP = 'top'
+    dummy_tk.BOTTOM = 'bottom'
+    dummy_tk.END = 'end'
+    dummy_tk.NORMAL = 'normal'
+    dummy_tk.DISABLED = 'disabled'
+    dummy_tk.BooleanVar = DummyVar
+    dummy_tk.X = 'x'
     dummy_tk._default_root = None
 
     dummy_ttk = SimpleNamespace()
