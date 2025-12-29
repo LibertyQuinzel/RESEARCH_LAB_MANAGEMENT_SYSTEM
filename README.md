@@ -35,19 +35,6 @@ The menu will guide you through creating and managing equipment, members, projec
   - `reporting.py` — report generation
 - `scripts/` — utility scripts
 
-## Notes
-
-- Add a `requirements.txt` if your project grows to include third-party packages.
-- Database files and sensitive items are excluded via `.gitignore`.
-
-## Contributing
-
-Open an issue or submit a pull request. Keep changes small and add tests where relevant.
-
-## License
-
-No license specified. Add a `LICENSE` file if you want to publish this project under an open-source license.
-
 ## Screenshots
 
 The repository includes a `screenshots/` folder with UI captures. Embed images by referencing the relative paths below.
