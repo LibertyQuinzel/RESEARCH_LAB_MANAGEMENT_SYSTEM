@@ -52,33 +52,24 @@ No license specified. Add a `LICENSE` file if you want to publish this project u
 
 The repository includes a `screenshots/` folder with UI captures. Embed images by referencing the relative paths below.
 
+
 - Main UI / List view:
 
-```
 ![Main UI - list view](screenshots/lab_management_system_main.png)
-```
 
 - Projects management:
 
-```
 ![Manage Projects](screenshots/manage_projects.png)
-```
 
 - Members management:
 
-```
 ![Manage Members](screenshots/manage_members.png)
-```
 
 - Equipment management:
 
-```
 ![Manage Equipment](screenshots/manage_equipment.png)
-```
 
 - Grants / Statistics view:
 
-```
 ![Grant Statistics](screenshots/grant_statistics.png)
-```
 
