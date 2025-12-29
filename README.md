@@ -35,6 +35,9 @@ The menu will guide you through creating and managing equipment, members, projec
   - `reporting.py` — report generation
 - `scripts/` — utility scripts
 
+## Contributing
+
+Open an issue or submit a pull request. Keep changes small and add tests where relevant.
 ## Screenshots
 
 The repository includes a `screenshots/` folder with UI captures. Embed images by referencing the relative paths below.
