@@ -41,7 +41,7 @@ Open an issue or submit a pull request. Keep changes small and add tests where r
 
 ## Screenshots
 
-The repository includes a `screenshots/` folder with UI captures. Embed images by referencing the relative paths below.
+The repository includes a `screenshots/` folder with UI captures. 
 
 - Main UI / List view:
 
