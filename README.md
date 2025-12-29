@@ -35,3 +35,50 @@ The menu will guide you through creating and managing equipment, members, projec
   - `reporting.py` — report generation
 - `scripts/` — utility scripts
 
+## Notes
+
+- Add a `requirements.txt` if your project grows to include third-party packages.
+- Database files and sensitive items are excluded via `.gitignore`.
+
+## Contributing
+
+Open an issue or submit a pull request. Keep changes small and add tests where relevant.
+
+## License
+
+No license specified. Add a `LICENSE` file if you want to publish this project under an open-source license.
+
+## Screenshots
+
+The repository includes a `screenshots/` folder with UI captures. Embed images by referencing the relative paths below.
+
+- Main UI / List view:
+
+```
+![Main UI - list view](screenshots/lab_management_system_main.png)
+```
+
+- Projects management:
+
+```
+![Manage Projects](screenshots/manage_projects.png)
+```
+
+- Members management:
+
+```
+![Manage Members](screenshots/manage_members.png)
+```
+
+- Equipment management:
+
+```
+![Manage Equipment](screenshots/manage_equipment.png)
+```
+
+- Grants / Statistics view:
+
+```
+![Grant Statistics](screenshots/grant_statistics.png)
+```
+
