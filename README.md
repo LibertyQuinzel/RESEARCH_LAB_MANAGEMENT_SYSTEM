@@ -38,10 +38,10 @@ The menu will guide you through creating and managing equipment, members, projec
 ## Contributing
 
 Open an issue or submit a pull request. Keep changes small and add tests where relevant.
+
 ## Screenshots
 
 The repository includes a `screenshots/` folder with UI captures. Embed images by referencing the relative paths below.
-
 
 - Main UI / List view:
 
@@ -63,3 +63,20 @@ The repository includes a `screenshots/` folder with UI captures. Embed images b
 
 ![Grant Statistics](screenshots/grant_statistics.png)
 
+## Tests
+
+There is a test suite in the `tests/` directory. The tests use `pytest` and `pytest-cov` to run and report coverage.
+
+Run tests from the project root (use the repository virtualenv if available):
+
+```bash
+# install test deps if needed
+pip install pytest pytest-cov
+
+# run tests with coverage (ensure PYTHONPATH points to the repo root)
+PYTHONPATH=$(pwd) .venv/bin/pytest -q --cov=. --cov-report=term-missing
+```
+
+See `tests/test_database.py` and `tests/test_menus.py` for examples covering the DB helper and UI menus.
+
+````
