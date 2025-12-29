@@ -1,5 +1,5 @@
 # RESEARCH LAB MANAGEMENT SYSTEM
-A lightweight Python application to help small research labs manage resources and workflows. The project provides modules to track equipment, lab members, projects, and publications. It offers a straightforward command-line menu (`menu.py`) and optional tkinter-based dialogs for common CRUD operations and reports. Data persistence uses PostgreSQL; helper scripts are included for schema creation, seeding, and database triggers.
+A lightweight Python application to help small research labs manage resources and workflows. The project provides modules to track equipment, lab members, projects, and publications. It offers a GUI: tkinter-based dialogs for common CRUD operations and reports. Data persistence uses PostgreSQL; helper scripts are included for schema creation, seeding, and database triggers.
 
 ## Requirements
 
